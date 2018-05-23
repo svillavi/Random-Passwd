@@ -1,0 +1,41 @@
+html
+,body {
+	background: #F0FFF0;
+	font-family: Merriweather;
+}
+
+.mainContainer {
+	color: white;
+	background: /*234652;*/ #008B8B;
+	width: 450px;
+	height: 200px;
+	margin: 100px auto;
+	text-align: center;
+
+	box-shadow: 0 0 4px #232323;
+}
+
+.controlContainer {
+	padding-top: 10px;
+}
+
+.passwdDisplay {
+	margin: 20px 50px;
+	font-size: 40px;
+	background: #F0FFF0;
+	color: black;
+	width: 350px;
+	height: 50px;
+}
+
+.passwdDisplay span {
+	margin: auto;
+}
+
+.loadContainer {
+	padding-left: 50px;
+	font-size: 15px;
+	display: block;
+	position: absolute;
+	color: black;
+}
