@@ -3,7 +3,7 @@
 function randFunction(){
 
 
-	// const allChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+	const allChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
 	const letterChars ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	const numberChars ="0123456789";
 	const specialChars ="!@#$%^&*";
@@ -46,6 +46,19 @@ function randFunction(){
 			
 			var i = Math.floor(Math.random() * specialChars.length);
 			pass += specialChars.charAt(i);
+			
+				//Display generated passwd in span element
+			$(".passwdDisplay span").html(pass);
+		}
+	}
+
+	else{
+		for(var x=0; x < length; x++){
+			
+			console.log("allChars");
+			
+			var i = Math.floor(Math.random() * allChars.length);
+			pass += allChars.charAt(i);
 			
 				//Display generated passwd in span element
 			$(".passwdDisplay span").html(pass);
